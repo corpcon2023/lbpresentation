@@ -37,7 +37,7 @@
 						<h1> Agenda</h1>
 						<ul>
 							<li class="fragment">Build a simple web application from scratch</li>
-							<li class="fragment">Deploy web application to the cloud</li>
+							<li class="fragment">Deploy web application on the cloud</li>
 							<li class="fragment">Analyse performance results</li>
 							<li class="fragment">Load Balancer in action</li>
 							<li class="fragment">References</li>
@@ -49,7 +49,7 @@
 						<h1> Agenda</h1>
 						<ul>
 							<li style="color:yellow">Build a simple web application from scratch</li>
-							<li>Deploy web application to the cloud</li>
+							<li>Deploy web application on the cloud</li>
 							<li>Analyse performance results</li>
 							<li>Load Balancer in action</li>
 							<li>References</li>
@@ -80,18 +80,91 @@
 				</code></pre>
 			</section>
 		</section>
-		<section data-markdown data-transition="none none">
+		<section>
+			<section>
+					<p> Host the application on the internet using webserver</p>
+					<img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Apache_HTTP_server_logo_%282019-present%29.svg/480px-Apache_HTTP_server_logo_%282019-present%29.svg.png"/>
+					<img data-src="https://www.eginnovations.com/blog/wp-content/uploads/2021/01/microsoft-iis-logo.jpg"/>
+					<img data-src="https://www.nginx.com/wp-content/uploads/2018/08/NGINX-logo-rgb-large.png" style="border: 10px solid red;"/>
+			</section>
+			<section data-markdown data-auto-animate>
+				<textarea data-template>
+					<p> Demo instructions </p>
+					<ul>
+						<li> Install Nginx 
+						<pre>
+							<code>
+sudo apt update
+sudo apt install nginx -y
+						</code>
+					</pre>
+						</li>
+						<li> Copy the html file to nginx root directory 
+							<pre>
+							<code>
+sudo rm /var/www/html/index.nginx-debian.html
+sudo cp ~/corpcon/index.html /var/www/html/index.html
+						</code>
+						</pre>
+							</li>
+						<li> Find out the public IP
+						<pre>
+						<code>
+hostname -I or ifconfig -a
+						</code>
+						</pre>
+						</li>
+					</ul>
+				</textarea>
+			  </section>	
+		</section>
+		<section data-markdown>
 			<textarea data-template>
 				<h1> Agenda</h1>
 				<ul>
 					<li style="color:green">Build a simple web application from scratch</li>
-					<li style="color:yellow">Deploy web application to the cloud</li>
+					<li style="color:yellow">Deploy web application on the cloud</li>
 					<li>Analyse performance results</li>
 					<li>Load Balancer in action</li>
 					<li>References</li>
 				</ul>
 			</textarea>
 		  </section>
+
+		  <section>
+			<section data-markdown>
+				<textarea data-template>
+					<p> </p>
+					<ul>
+						<li>
+							<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0muvpziXLN1frXv-S058xVGJMbnI8--6B9rjPWwX6&s"/>
+						<li style="color:yellow">Deploy web application on the cloud</li>
+						<li>Analyse performance results</li>
+						<li>Load Balancer in action</li>
+						<li>References</li>
+					</ul>
+				</textarea>
+			  </section>			
+		</section>
+
+		<section>
+			<section data-markdown>
+				<textarea data-template>
+					<h6> Create a VM on the cloud </h6>
+					<p> Major cloud providers</p>
+					<ul>
+						<li>
+							<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0muvpziXLN1frXv-S058xVGJMbnI8--6B9rjPWwX6&s"/>
+						<li style="color:yellow">Deploy web application on the cloud</li>
+						<li>Analyse performance results</li>
+						<li>Load Balancer in action</li>
+						<li>References</li>
+					</ul>
+				</textarea>
+			  </section>			
+		</section>
+
+
 			</div>
 		</div>
 
