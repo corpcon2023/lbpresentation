@@ -134,36 +134,60 @@ hostname -I or ifconfig -a
 		  <section>
 			<section data-markdown>
 				<textarea data-template>
-					<p> </p>
-					<ul>
-						<li>
-							<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0muvpziXLN1frXv-S058xVGJMbnI8--6B9rjPWwX6&s"/>
-						<li style="color:yellow">Deploy web application on the cloud</li>
-						<li>Analyse performance results</li>
-						<li>Load Balancer in action</li>
-						<li>References</li>
-					</ul>
+					<p> Major cloud providers</p>
+							<img src="https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_1200x630.png" width="200" height="100"/>
+							<img src="https://www.freecodecamp.org/news/content/images/2020/10/gcp.png" width="300" height="200"/>
+							<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0muvpziXLN1frXv-S058xVGJMbnI8--6B9rjPWwX6&s" style="border: 10px solid red;"/>
 				</textarea>
-			  </section>			
-		</section>
+				</section>
 
-		<section>
+			<section> Place holder for VM creation demo</section>
+			</section>
+
+		
 			<section data-markdown>
 				<textarea data-template>
-					<h6> Create a VM on the cloud </h6>
-					<p> Major cloud providers</p>
+					<h1> Agenda</h1>
 					<ul>
-						<li>
-							<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0muvpziXLN1frXv-S058xVGJMbnI8--6B9rjPWwX6&s"/>
-						<li style="color:yellow">Deploy web application on the cloud</li>
-						<li>Analyse performance results</li>
+						<li style="color:green">Build a simple web application from scratch</li>
+						<li style="color:green">Deploy web application on the cloud</li>
+						<li style="color:yellow">Analyse performance results</li>
 						<li>Load Balancer in action</li>
 						<li>References</li>
 					</ul>
 				</textarea>
-			  </section>			
-		</section>
+			  </section>
+			
+			<section>
+			<section data-auto-animate>
+					<p>Peformance testing using locust</p>
+					<pre>
+						<code>
+pip install locust
 
+						</code>
+						</pre>
+					<pre>
+					<code>
+locustfile.py
+
+from locust import HttpUser, task
+class User(HttpUser):
+	@task
+	def mainPage(self):
+		self.client.get("/")
+					</code>
+					</pre>
+					<pre>
+						<code>
+locust
+						</code>
+						</pre>
+					</section>
+					<section>Place holder for resize the VM </section>
+
+					<section>Performance test results(Create Table)</section>
+				</section>
 
 			</div>
 		</div>
